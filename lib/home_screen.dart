@@ -4,6 +4,7 @@ import 'package:multi_apps_2022/document_scanner/document_scanner.dart';
 import 'package:multi_apps_2022/google_map/google_map_sample.dart';
 import 'package:multi_apps_2022/qrcode_scanner/qr_view_example.dart';
 import 'package:multi_apps_2022/video_calling/jitsee_meet_screen.dart';
+import 'package:multi_apps_2022/video_player/video_player.dart';
 import 'package:multi_apps_2022/webview/simple_webview.dart';
 
 
@@ -55,13 +56,17 @@ class HomeScreen extends StatelessWidget {
           
           
                     ElevatedButton(onPressed: (){
-  Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => Meeting(),
-              ));
-            }, child: Text("Video Call"))
+  // Navigator.of(context).push(MaterialPageRoute(
+  //               builder: (context) => Meeting(),
+  //             ));
+            }, child: Text("Video Call")),
           
 
-
+         ElevatedButton(onPressed: (){
+  Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => VideoPlayerTest(),
+              ));
+            }, child: Text("Video player")),
           ],
 
         ),

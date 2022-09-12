@@ -6,6 +6,7 @@ import 'package:multi_apps_2022/home_screen.dart';
 import 'package:multi_apps_2022/locallization/locallization_screen.dart';
 import 'package:multi_apps_2022/media/image_picker_screen.dart';
 import 'package:multi_apps_2022/video_calling/jitsee_meet_screen.dart';
+import 'package:multi_apps_2022/video_player/video_player.dart';
 import 'package:multi_apps_2022/webview/simple_webview.dart';
 import 'package:multi_apps_2022/webview/webview_screen.dart';
 
@@ -31,7 +32,7 @@ class MyHome extends StatelessWidget {
         // delegate from localization package.
         // LocalJsonLocalization.delegate,
       ],
-      home:  LocalizationScreen(),
+      home:  HomeScreen(),
     );
   }
 }
